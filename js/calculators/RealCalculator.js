@@ -5,7 +5,8 @@ class RealCalculator {
     div(a, b) {
         if (b != 0)
             return a / b;
-        else return 'Ошибка!';
+        else
+            return 'Ошибка!';
     }
     pow(a, n) { return Math.pow(a, n); }
     prod(a, p) { return a * p; }
