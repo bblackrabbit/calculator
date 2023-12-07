@@ -3,7 +3,7 @@ class ComplexCalculator extends RealCalculator {
     sub(a, b) { return new Complex( a.re - b.re, a.im - b.im ); }
     mult(a, b) { return new Complex( a.re*b.re - a.im*b.im, a.re*b.im + b.re*a.im ); }
     inv(a) {
-        const q = Math.sqrt(a.re) + Math.sqrt(a.im);
+        const q = Math.sqr(a.re) + Math.sqr(a.im);
         return new Complex( a.re / q, -a.im / q );
     }
     div(a, b) {
