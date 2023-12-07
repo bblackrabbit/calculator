@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Считалочка</title>
+    <script src="./js/calculators/RealCalculator.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <input type="text" id="firstNumber" placeholder="Первое число">
+    <input type="text" id="secondNumber" placeholder="Второе число">
+    <div class="operands-block">
+        <button class="operand" data-handler="add">Сложение</button>
+        <button class="operand" data-handler="sub">Вычитание</button>
+        <button class="operand" data-handler="mult">Умножение</button>
+        <button class="operand" data-handler="div">Деление</button>
+        <button class="operand" data-handler="pow">Возведение в степень</button>
+        <button class="operand" data-handler="prod">Умножение на скаляр</button>
+    </div>
+    <input type="text" id="result" placeholder="Результат" readonly>
+</body>
+
+</html>
