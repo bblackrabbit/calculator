@@ -1,21 +1,17 @@
-window.onload = () => {
+window.onload = function () {
     const operandHandler = (event) => {
-        const firstNumber = document.getElementById('firstNumber').value;
-        const secondNumber = document.getElementById('secondNumber').value;
+        const calc = new Calculator();
+        const firstNumber = calc.getValue(document.getElementById('firstNumber').value);
+        const secondNumber = calc.getValue(document.getElementById('secondNumber').value);
+        const operand = event.target.dataset.operand;
+        const result = calc[operand](firstNumber, secondNumber);
 
-        const operand = event.target.dataset.handler;
-
-        if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
-            const calc = new RealCalculator;
-            const result = calc[operand](firstNumber - 0, secondNumber - 0);
-            document.getElementById('result').value = result;
-        }
+        document.getElementById('result').value = result.toString();
     }
 
     const buttons = document.querySelectorAll('.operand');
     buttons.forEach(button => {
         button.addEventListener('click', operandHandler);
     });
-
 }
 

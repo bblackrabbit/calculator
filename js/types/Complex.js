@@ -3,4 +3,13 @@ class Complex {
         this.re = re;
         this.im = im;
     }
+
+    // complex -> 2+i3
+    toString() {
+        return this.im ?
+            this.im > 0 ?
+                `${this.re}+i*${this.im}` :
+                `${this.re}-i*${-this.im}` :
+            this.re.toString();
+    }
 }

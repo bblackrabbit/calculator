@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Считалочка</title>
+    <script src="./js/types/Complex.js"></script>
+    <script src="./js/types/Vector.js"></script>
+    <script src="./js/types/Matrix.js"></script>
+    <script src="./js/types/Member.js"></script>
+    <script src="./js/types/Polynomial.js"></script>
+    <script src="./js/calculators/RealCalculator.js"></script>
+    <script src="./js/calculators/ComplexCalculator.js"></script>
+    <script src="./js/calculators/VectorCalculator.js"></script>
+    <script src="./js/calculators/MatrixCalculator.js"></script>
+    <script src="./js/calculators/PolynomialCalculator.js"></script>
+    <script src="./js/calculators/Calculator.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <textarea type="text" id="firstNumber" placeholder="Первое число"></textarea>
+    <textarea type="text" id="secondNumber" placeholder="Второе число"></textarea>
+    <div class="operands-block">
+        <button class="operand" data-operand="add">Сложение</button>
+        <button class="operand" data-operand="sub">Вычитание</button>
+        <button class="operand" data-operand="mult">Умножение</button>
+        <button class="operand" data-operand="div">Деление</button>
+        <button class="operand" data-operand="pow">Возведение в степень</button>
+        <button class="operand" data-operand="prod">Умножение на скаляр</button>
+    </div>
+    <textarea type="text" id="result" placeholder="Результат" readonly></textarea>
+</body>
+
+</html>
